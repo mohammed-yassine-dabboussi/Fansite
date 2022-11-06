@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;800&display=swap');
+
+body{
+    margin: 0;
+    background-color: #8a0000;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+    text-align: justify;
+}
+  
+
+header{
+    background-color: rgb(0, 0, 0);
+    height: max-content;
+    display:flex;
+    justify-content: center;
+    background-image: url("Images/HEADER.png") ; 
+    background-size: 100%; /* prend la photo en entier */
+    font-size: large;
+
+}
+
+.divHeader2{
+    width: 70%;
+    height: max-content;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*logo header*/
+.logoEST{
+    width: 50%;
+    filter: drop-shadow(0 0 0.75rem rgb(161, 0, 0));
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.test1{
+    display: flex;
+    justify-content: center;
+}
+
+/*couleur des liens*/
+a:link{
+    color: #ffbb00;
+    text-decoration:none; 
+    cursor: pointer;
+}
+/*couleur des liens visité*/
+a:visited{
+    color: #ffbb00;
+}
+
+/*couleur des liens quand le curseur est dessus*/
+a:hover { 
+    color: #8a0000; 
+}
+
+.lienActuel{
+    background-color: #8a0000;
+}
+
+.menuHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: #ffbb00;
+    font-size: large;
+    text-shadow: 1px 1px 2px rgb(128, 0, 0), 0 0 1em rgb(255, 230, 0), 0 0 1em rgb(255, 230, 0);
+    
+}
+
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: #FFFFFF;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+/* Logo réseaux sociaux */
+.divFooter_2{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    width: 8%;
+    height: 30%;
+}
+
+
+/* Page d'accueil */
+.divaccueil1{
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #ffbb00;
+}
+
+.divaccueil1_1{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    color: #ffbb00;
+    margin-bottom: 3%;
+}
+
+.divaccueil_3{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;    
+}
+.divaccueil3_1{
+    margin-left: 3%;
+    margin-right: 3%;
+  
+    display: flex;
+}
+
+/*diapo */
+.divDiapo{
+    width: 70%;
+    margin: auto;
+}
+
+.diapo{
+    position: relative;
+    overflow: hidden;
+}
+
+#nav-droite, #nav-gauche{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 3em;
+}
+
+#nav-droite{
+    right: 20px;
+}
+#nav-gauche{
+    left: 20px;
+}
+
+.elements{
+    display: flex;
+    transition: 1s linear;
+}
+
+.element{
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.element > img{
+    width: 100%;
+}
+
+.caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255,255,255,0.4);
+    padding: 30px;
+}
+
+/*Page effectif*/
+
+
+.saison{
+    color: #ffbb00;
+}
+
+.diveffectif{
+    display: flex;
+    height: 100%;
+}
+
+.diveffectif1{
+    background: rgb(255,187,0);
+    background: linear-gradient(90deg, rgba(255,187,0,1) 0%, rgba(255,187,0,1) 50%, rgba(138,0,0,1) 100%);
+    height: auto ;
+    width: 25%;
+}
+
+.diveffectif2{
+    height: auto;
+    width: 80%;
+    margin-left: 5%;
+}
+
+.diveffectif2_1{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.listeEffectif{
+    list-style: none;
+
+}
+
+.listeJoueurs{
+    list-style: disc;
+}
+
+.joueurs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photoJoueur{
+    filter: drop-shadow(0 0 0.75rem rgb(255, 238, 0));
+
+}
+
+/* Page Calendier*/
+
+
+.divCalendrier{
+    display: flex;
+    justify-content: center;
+
+}
+
+.divCalendrierContenu{
+    width: 80%;
+}
+
+.calendrierMois{
+    background-color: #ffbb00;
+    color: #8a0000;
+}
+
+.matchs{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+
+}
+
+.divmatch{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.defaite{
+    background-color: #ff0000;
+    width: 5%;
+    display: flex;
+    justify-content: end;
+}
+
+.victoire{
+    background-color: #12d400;
+    width: 5%;
+    display: flex;
+    justify-content: end;
+}
+
+.nul{
+    background-color: #ff9900;
+    width: 5%;
+    display: flex;
+    justify-content: end;
+}
+
+.nonJoue{
+    background-color: #8a0000;
+    width: 5%;
+    display: flex;
+    justify-content: end;
+}
+
+.logoMatch{
+    height: max-content;
+    display: flex;
+    align-self: center;
+}
+
+/*Page Palmares*/
+
+.divPalmares{
+    width: 100%;
+    height: 100%;
+    
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+   
+    
+    
+}
+
+.divPalmares2{
+    width: 60%;
+    height: auto;
+    margin:3%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(255,128,0);
+    background: linear-gradient(90deg, rgba(255,128,0,1) 0%, rgba(255,187,0,1) 50%, rgba(255,128,0,1) 100%);
+    border : 3px solid #000000;
+}
+
+.imageTitre{
+        height: auto;
+        border : 3px solid #000000;
+        margin: 1%;
+}
+
+/*Page Histoire*/
+
+.divHistoire{
+    width: 100%;
+    height: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+   
+    
+    
+}
+
+.divHistoire2_0{
+    width: 70%;
+    height: auto;
+    margin:3%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("Images/Mohamed_zouaouifond.png");
+    background-size: 100%;
+    border : 3px solid #000000;
+    color: #ffbb00;
+}
+
+.divHistoire2_1{
+    width: 70%;
+    height: auto;
+    margin:3%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("Images/esperancehistoirefond.png");
+    background-size: 100%;
+    border : 3px solid #000000;
+    color: #ffbb00;
+}
+
+.divHistoire2_2{
+    width: 70%;
+    height: auto;
+    margin:3%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("Images/histoirecoupefond.png");
+    background-size: 100%;
+    border : 3px solid #000000;
+    color: #ffbb00;
+}
+
+.divHistoire2_3{
+    width: 70%;
+    height: auto;
+    margin:3%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("Images/tarekfond.png");
+    background-size: 100%;
+    border : 3px solid #000000;
+    color: #ffbb00;
+}
+
+
+.imageHistoire{
+        height: auto;
+        border : 3px solid #000000;
+        margin: 1%;
+   
+}
+
+/* Page photos */
+.divPhoto{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divPhoto2{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.divPhoto3{
+    display: flex;
+    flex-direction: column;
+}
+
+.imagePhotos{
+    height: auto;
+    border : 3px solid #ffbb00;
+
+}
+
+/* Page contact*/
+input[type=text], textarea, input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+  }
+  label{margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;}
+  
+  input[type=submit] {
+    background-color: #1255a2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #1872D9;
+  }
+  
+  .divContact {
+    /* Ajouter box-sizing */
+    box-sizing : border-box;
+    border-radius:5px;
+    background-color:#f2f2f2;
+    padding:20px;
+    width: 100%;
+    /* redéfinition 400 + 2*20 */
+    max-width: 440px;
+    margin:0 auto;
+  }
